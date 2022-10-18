@@ -1,0 +1,61 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "(Debug) Launch",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/wordle_debug",
+            "args": [
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "build",
+            "env": {
+                "LSAN_OPTIONS":"detect_leaks=0"
+            }
+        },
+        {
+            "name": "(Debug) Launch 5 5.txt",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/wordle_debug",
+            "args": [
+                "5",
+                "data/5.txt"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "build",
+            "env": {
+                "LSAN_OPTIONS":"detect_leaks=0"
+            }
+        },
+        {
+            "name": "(Debug) Launch QWordle",
+            "type": "lldb",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/wordle_debug",
+            "args": [
+                "5",
+                "data/5.txt",
+                "true"
+            ],
+            "stopAtEntry": true,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "lldb",
+            "preLaunchTask": "build",
+            "env": {
+                "LSAN_OPTIONS":"detect_leaks=0"
+            }
+        }
+    ]
+}

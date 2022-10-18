@@ -1,0 +1,3 @@
+{
+    "clang-tidy.executable": "clang-tidy -I include"
+}
